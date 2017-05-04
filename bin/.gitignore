@@ -1,0 +1,14 @@
+/FreightSystem.class
+/FreightSystemAPI.class
+/FreightSystemCMD.class
+/Map.class
+/Route.class
+/Town.class
+/state.class
+/State.class
+/AStarSearch.class
+/AStar.class
+/Neighbours.class
+/Neighbour.class
+/Job.class
+/Heuristic.class

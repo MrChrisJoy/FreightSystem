@@ -1,9 +1,9 @@
 
-public class Route {
+public class Neighbour {
 	private int cost;
 	private Town town;
 	
-	public Route(int cost, Town town) {
+	public Neighbour(int cost, Town town) {
 		this.setCost(cost);
 		this.setTown(town);
 	}

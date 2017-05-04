@@ -16,12 +16,13 @@ public class FreightSystemCMD {
 
 	private void Cost(int cost, String town1, String town2) {
 		System.out.println("Cost " + cost + " " + town1 + " " + town2);
-		FS.addRoute(cost, town1, town2);
+		FS.connectTowns(cost, town1, town2);
 	}
-
+	
+	// add job between two towns
 	private void Job(String town1, String town2) {
 		System.out.println("Job " + town1 + " " + town2);
-		
+		FS.addJob(town1, town2);
 	}
 	
 	
@@ -62,6 +63,7 @@ public class FreightSystemCMD {
 		}
 		
 		FS.printDebug();
+		FS.solve();
 	}
 	
 
