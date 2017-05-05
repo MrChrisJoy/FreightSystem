@@ -8,6 +8,7 @@ public class Neighbour {
 		this.setTown(town);
 	}
 	
+	
 	public int getCost() {
 		return cost;
 	}

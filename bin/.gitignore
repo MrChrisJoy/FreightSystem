@@ -12,3 +12,7 @@
 /Neighbour.class
 /Job.class
 /Heuristic.class
+/Edge.class
+/Neighbour$Edge.class
+/NeighbourComparator.class
+/Node.class
