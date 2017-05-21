@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /** 
  * Job Class - used to represent jobs in the FreightSpace
  * 
@@ -13,11 +14,19 @@ public class Job {
 	 * @param from
 	 * @param to
 	 */
+=======
+
+public class Job {
+	private Town from;
+	private Town to;
+
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 	public Job(Town from, Town to) {
 		this.setFrom(from);
 		this.setTo(to);
 	}
 	
+<<<<<<< HEAD
 	/**
 	 * Get town from
 	 * 
@@ -56,4 +65,18 @@ public class Job {
 
 	private Town from;
 	private Town to;
+=======
+	public Town getFrom() {
+		return from;
+	}
+	public void setFrom(Town from) {
+		this.from = from;
+	}
+	public Town getTo() {
+		return to;
+	}
+	public void setTo(Town to) {
+		this.to = to;
+	}
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 }

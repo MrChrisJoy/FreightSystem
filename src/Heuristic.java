@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.List;
 
 /** 
@@ -16,4 +17,9 @@ public interface Heuristic {
 	 * @return An integer value for the heuristic, multiplied by the scalar.
 	 */
 	public int calcHeur(FreightState curr, List<FreightRoute> routes, int scalar);
+=======
+
+public class Heuristic {
+
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 }

@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 
+<<<<<<< HEAD
 /** 
  * Towns - Nodes that have a name, unloading cost and a set of neighbours
  * 
@@ -16,6 +17,10 @@ public class Town {
 	 * @param cost the unloading cost of the town
 	 * @param name the name of the town, string format
 	 */
+=======
+public class Town implements Comparable<Town>{
+
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 	public Town (int cost, String name) {
 		this.setUnloadCost(cost);
 		this.setName(name);
@@ -23,6 +28,7 @@ public class Town {
 		this.neighbourcosts = new HashMap<Town, Integer>();
 	}
 	
+<<<<<<< HEAD
 	/**
 	 * Add a neighbor to this town
 	 * 
@@ -39,21 +45,33 @@ public class Town {
 	 * @param town neighbour town object
 	 * @return the integer cost between towns
 	 */
+=======
+
+	public void addNeighbourCost(Town town, int cost) {
+		neighbourcosts.put(town, cost);
+	}
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 	public int getNeighourCost(Town town) {
 		return neighbourcosts.get(town);
 	}
 	
 	
+<<<<<<< HEAD
 	/**
 	 * Add a neighbour with a cost
 	 * 
 	 * @param cost travel cost between neighbours
 	 * @param town the town object being linked
 	 */
+=======
+	// NEIGHBOUR FUNCTIONS
+	// add neighbour
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 	public void addNeighbour(int cost, Town town) {
 		neighbours.add(town);
 		addNeighbourCost(town, cost);
 	}
+<<<<<<< HEAD
 	
 	/**
 	 * Get an array of neighbours
@@ -70,6 +88,13 @@ public class Town {
 	 * @param town town object of neighbour
 	 * @return the town object of neighbour
 	 */
+=======
+	// get all neighbours
+	public ArrayList<Town> getNeighbours() {
+		return neighbours;	
+	}
+	// find and get single neighbour, given the name of the neighbour
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 	public Town getNeighbour(Town town) {
 		Town found = null;
 		for (Town n: neighbours) {
@@ -80,15 +105,21 @@ public class Town {
 		return found; 
 	}
 	
+<<<<<<< HEAD
 	/**
 	 * Get number of neighbours
 	 * 
 	 * @return degree of vertexes (i.e. neighbours)
 	 */
+=======
+	
+	// get number of connected towns
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 	public int numNeighbours() {
 		return neighbours.size();
 	}
 
+<<<<<<< HEAD
 	/**
 	 * Get the name of the town
 	 * 
@@ -121,16 +152,40 @@ public class Town {
 	 * 
 	 * @param cost an integer of unload cost
 	 */
+=======
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getUnloadCost() {
+		return unloadCost;
+	}
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 	public void setUnloadCost(int cost) {
 		this.unloadCost = cost;
 	}
 	
+<<<<<<< HEAD
 	/**
 	 * When this object is called as a string, the name is returned
 	 */
 	public String toString() {
 		return this.name;
 	}
+=======
+	public String toString() {
+		return this.name;
+	}
+	
+
+	@Override
+	public int compareTo(Town o) {
+		// TODO Auto-generated method stub
+		return Integer.compare(this.priority, o.priority);
+	}
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 
 	private String name;
 	private int unloadCost;

@@ -1,5 +1,6 @@
 import java.util.LinkedHashMap;
 
+<<<<<<< HEAD
 /** 
  * Map Class - Graph representation of the current scenario. 
  * Acts as a "helper class" to FreightSystemAPI via the FreightSpace controller 
@@ -12,10 +13,16 @@ public class Map {
 	/**
 	 * Map contructor - basically a linear hashmap of towns (nodes) 
 	 */
+=======
+public class Map {
+	private LinkedHashMap<String, Town> towns = null;
+	
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 	public Map() {
 		this.towns = new LinkedHashMap<String, Town>();
 	}
 	
+<<<<<<< HEAD
 	/**
 	 * Get all the towns in the map.
 	 * 
@@ -31,20 +38,32 @@ public class Map {
 	 * @param town string name of the town
 	 * @return the town object with given name
 	 */
+=======
+	// get list of loaded towns
+	public LinkedHashMap<String, Town> getTowns() {
+		return this.towns;
+	}
+	// get single town
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 	public Town getTown(String town) {
 		return towns.get(town);
 	}
 	
+<<<<<<< HEAD
 	/**
 	 * Add a town to the name
 	 * 
 	 * @param cost unloading cost
 	 * @param name string name of the town
 	 */
+=======
+	// add town to map
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 	public void addTown(int cost, String name) {
 		towns.put(name, new Town(cost, name));
 	}
 	
+<<<<<<< HEAD
 	/**
 	 * number of towns in the map
 	 * 
@@ -55,4 +74,10 @@ public class Map {
 	}
 
 	private LinkedHashMap<String, Town> towns = null;
+=======
+	// number of towns in map
+	public int numTowns() {
+		return towns.size();
+	}
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 }

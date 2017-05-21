@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /** 
  * Neighbour Class - links two towns together (similar to an edge)
  * 
@@ -12,11 +13,19 @@ public class Neighbour {
 	 * @param cost the cost between two towns
 	 * @param town town to be linked to
 	 */
+=======
+
+public class Neighbour {
+	private int cost;
+	private Town town;
+	
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 	public Neighbour(int cost, Town town) {
 		this.setCost(cost);
 		this.setTown(town);
 	}
 	
+<<<<<<< HEAD
 	/**
 	 * Get the travel cost between two towns
 	 * 
@@ -31,28 +40,43 @@ public class Neighbour {
 	 * 
 	 * @param cost the cost between two towns
 	 */
+=======
+	
+	public int getCost() {
+		return cost;
+	}
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 	public void setCost(int cost) {
 		this.cost = cost;
 	}
 
+<<<<<<< HEAD
 	/**
 	 * Get the town object
 	 * 
 	 * @return the town object
 	 */
+=======
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 	public Town getTown() {
 		return town;
 	}
 
+<<<<<<< HEAD
 	/**
 	 * Set the town object
 	 * 
 	 * @param town the town object
 	 */
+=======
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 	public void setTown(Town town) {
 		this.town = town;
 	}
 	
+<<<<<<< HEAD
 	private int cost;
 	private Town town;
+=======
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 }

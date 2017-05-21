@@ -1,5 +1,6 @@
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -11,10 +12,20 @@ import java.util.Scanner;
  * COMP2911 Assignment 2 - 2017 Semester 1 [UNSW CSE]
  * @author	Chris Joy
  * @date	05/05/17
+=======
+import java.util.Scanner;
+
+/**FreightSystem: Main system class file.
+ * 
+ * COMP2911 Assignment 2 - 2017 Semester 1 [UNSW CSE]
+ * @author	chrisjoy
+ * @date	28/04/17
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
  */
 public class FreightSystem {
 
 	/**
+<<<<<<< HEAD
 	 * Freight system constructor - creates an object of the heuristic strategy to be used
 	 * by the main class. The setup allows developer to implement different strategies and 
 	 * launch multiple instances of the system.
@@ -160,4 +171,29 @@ public class FreightSystem {
 	private static FreightSpace FS = null;
 	private static Heuristic heuristic = null;
 	private static FreightSystemAPI australian_company = null;
+=======
+	 * Main function, entry to the system.
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Scanner inputStream = null;
+		try {
+			inputStream = new Scanner(new FileReader(args[0]));
+			// create a new API handler
+			FreightSystemAPI handler = new FreightSystemAPI();
+			// create a new system, containing the API handles and input stream
+			FreightSystemCMD FS = new FreightSystemCMD(handler, inputStream);
+			// process the input stream using the API handles
+			FS.process();
+		}
+		catch (FileNotFoundException e) {
+			System.out.println(e);
+		}
+		finally {
+			if (inputStream != null)
+				inputStream.close();
+		}
+	}
+	
+>>>>>>> 40b20acef9692c0bb8c45368dbb0927549c31dcc
 }
