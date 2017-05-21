@@ -1,6 +1,5 @@
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Scanner;
 
