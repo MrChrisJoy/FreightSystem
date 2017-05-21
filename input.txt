@@ -1,0 +1,16 @@
+Unloading 120 Sydney
+Unloading 80 Dubbo
+Unloading 80 Grafton
+Unloading 120 Wagga
+Unloading 160 Bathurst
+Cost 360 Sydney Wagga
+Cost 200 Sydney Bathurst
+Cost 200 Dubbo Grafton
+Cost 240 Dubbo Bathurst
+Cost 480 Grafton Wagga
+Cost 440 Grafton Bathurst
+Cost 400 Wagga Bathurst
+Job Grafton Wagga
+Job Dubbo Grafton
+Job Sydney Wagga
+Job Sydney Bathurst
